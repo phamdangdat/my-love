@@ -36,9 +36,6 @@
           
         
         </div>
-        <audio id="player" autoplay loop>
-          <source src="./music.mp3" type="audio/mp3">
-      </audio>
         <div id="ground"></div>
       </div>
       
@@ -46,7 +43,12 @@
       <div id="canva">
       <canvas id="canvas"></canvas>
     </div>
-    <audio src="music.mp3" autoplay controls hidden></audio>
+    <iframe src="music.mp3" allow="autoplay" id="music" hidden ></iframe>
+    <!-- <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none;"></iframe> -->
+    <audio id="player" autoplay controls>
+      <source src="music.mp3" type="audio/mp3">
+      <source src="music.mp3" type="audio/org">
+  </audio>
       <script src="main.js"></script>
     </body>
 </html>
